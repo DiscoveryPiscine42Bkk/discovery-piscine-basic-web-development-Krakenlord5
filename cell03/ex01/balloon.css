@@ -1,0 +1,8 @@
+div {
+    position: absolute;
+    margin: 300px;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 100%;
+}
