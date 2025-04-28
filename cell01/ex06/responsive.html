@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html>
@@ -18,25 +17,31 @@
             .d2 {
                 background-color: greenyellow;
             }
-            .custom-div {
+            div {
                 margin: 20px 20px 20px 2px;
                 width: auto;
                 height: auto;
                 display: flex;
             }
+            .container {
+                height: 100%;
+            }
+            body, html {
+                height: 100%;
+            }
         </style>
     </head>
     <body>
-        <div>
+        <div class="container">
             <table>
                 <tr>
                     <td class="d1">
-                        <div class="custom-div">
+                        <div>
                             <p>hello world</p>
                         </div>
                     </td>
                     <td class="d2">
-                        <div class="custom-div">
+                        <div>
                             <p>hi from box 2</p>
                         </div>
                     </td>
