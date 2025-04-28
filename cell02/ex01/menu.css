@@ -1,0 +1,34 @@
+.dropdown-button {
+    background-color: pink;
+    width: auto;
+    height: auto;
+    font-size: 48px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.contents {
+    display: none;
+    position: relative;
+    background-color: lightgray;
+}
+
+.contents a {
+    display: block;
+    padding: 5px 0px 5px 2px;
+}
+
+a {
+    font-size: 32px;
+}
+
+.dropdown:hover .contents {
+    display: block;
+}
+
+.contents a:hover {
+    background-color: greenyellow;
+}
