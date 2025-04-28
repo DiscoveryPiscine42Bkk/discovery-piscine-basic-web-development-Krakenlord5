@@ -1,0 +1,36 @@
+h3 {
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+
+.container1 {
+    background-image: url("https://images2.alphacoders.com/570/570353.png");
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.container2 {
+    background-image: url("https://images.alphacoders.com/125/1257611.jpg");
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+div {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+html, body {
+    height: 100%;
+}
