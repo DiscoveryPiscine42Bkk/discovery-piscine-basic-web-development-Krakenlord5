@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="calc.css">
+        <script src="calc.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="display">
+                <h1 id="left-display" style="margin-left: 10px;"></h1>
+                <h1 id="op"></h1>
+                <h1 id="right-display"></h1>
+            </div>
+            <table>
+                <tr>
+                   <td>
+                    <button onclick="clickEvent(this)">7</button>
+                    <button onclick="clickEvent(this)">8</button>
+                    <button onclick="clickEvent(this)">9</button>
+                   </td> 
+                </tr>
+                <tr>
+                   <td>
+                    <button onclick="clickEvent(this)">4</button>
+                    <button onclick="clickEvent(this)">5</button>
+                    <button onclick="clickEvent(this)">6</button>
+                   </td> 
+                </tr>
+                <tr>
+                   <td>
+                    <button onclick="clickEvent(this)">0</button>
+                    <button onclick="clickEvent(this)">1</button>
+                    <button onclick="clickEvent(this)">2</button>
+                    <button onclick="clickEvent(this)">3</button>
+                   </td> 
+                </tr>
+                <tr>
+                   <td>
+                    <button onclick="clickEvent(this)">+</button>
+                    <button onclick="clickEvent(this)">-</button>
+                    <button onclick="clickEvent(this)">*</button>
+                    <button onclick="clickEvent(this)">/</button>
+                    <button onclick="clickEvent(this)">%</button>
+                   </td> 
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="compute()">Try me!</button>
+                        <button onclick="reset()">Reset</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
