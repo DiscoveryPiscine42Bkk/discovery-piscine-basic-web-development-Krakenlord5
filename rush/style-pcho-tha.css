@@ -1,0 +1,406 @@
+* {
+    color: #0b2235;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    box-shadow: 0px 1px 20px #6ad5f3b6;
+}
+
+.content {
+    margin: 0;
+    padding: 0;
+    width: 60%;
+    min-height: 100vh;
+    text-align: left;
+    color: #0b2235;
+    background-color: #a5d4e1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 0px 10px #6ad5f3b6;
+}
+
+.cover_img{
+    background-image: url("blue_cloud.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 40%;
+    min-height: 100vh;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 4px 0px 10px #6ad5f3b6;
+}
+
+.cover_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navbar {
+    position: fixed;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 100;
+    background-color: transparent;
+    padding: 20px 10px;
+    border-radius: 30px;
+    backdrop-filter: blur(5px);
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nav-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #3aa5c3;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 3px 10px #0c61b0c4;
+    overflow: hidden;
+}
+
+.nav-icon i {
+    font-size: 20px;
+    color: #333;
+}
+
+.nav-icon img {
+    width: 70%;
+    height: 70%;
+    object-fit:cover;
+}
+.nav-text {
+    position: absolute;
+    margin-left: 4px;
+    left: 30px;
+    background-color: #3aa5c3;
+    padding: 10px 20px;
+    border-radius: 0 20px 20px 0;
+    font-weight: bold;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-item:hover .nav-icon {
+    background-color: #00c6fd;
+    opacity: 0.8;
+    
+}
+
+.nav-item:hover .nav-icon i {
+    color: white;
+}
+
+.nav-item:hover .nav-text {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.content p {
+    margin: 0;
+    padding: 20px;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    box-shadow: 1px 1px 10px #6ad5f3b6;
+    
+}
+
+.about-me-row {
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+}
+
+.about-me-text {
+    border-radius: 10px;
+    padding: 15px;
+    border: 2px;
+    border-style: solid;
+    width: 100%;    
+    box-shadow: 1px 1px 10px  #0e5374;
+    background-color: #3982a3;
+}
+
+.fade-in-anim {
+    animation: fade-in;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+}
+
+.about-me-text, .pfp, .abtmetxt {
+    opacity: 0;
+}
+
+.abtmetxt {
+    margin-top: 50px;
+}
+
+.pfp {
+    box-shadow: 1px 1px 10px #0e5374;
+}
+
+@keyframes fade-in {
+    from{ opacity: 0;}
+    to {opacity: 100%;}
+}
+
+.miscellaneous {
+    box-shadow: 1px 1px 10px #0e5374;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 10px;
+    opacity: 0;
+    background-color: #3982a3;
+}
+
+.miscel-text-row {
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+}
+
+.experiences {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.exp-row {
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+}
+
+.exp-box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px;
+    border-color: black;
+    border-radius: 10px;
+    border-style: solid;
+    width: 250px;
+    height: 180px;    
+    padding: 10px;
+    box-shadow: 1px 1px 10px #0e5374;
+    transition: transform 0.7s;
+    background-color: #3982a3;
+}
+
+.exp-box:hover {
+    box-shadow: 4px 4px 10px #0e5374;
+    transform: translate(-3px, -10px);
+}
+
+.exptxt {
+    opacity: 0;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts-area {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    opacity: 0;
+}
+
+.contacttxt {
+    opacity: 0;
+}
+
+.contacts-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.individual-info {
+    display: flex;
+    flex-direction: row;
+    column-gap: 12px;
+    margin: 10px;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.contact-icon {
+    width: 60px;    
+    height: 60px;
+    border: 1px;
+    border-color: black;
+    border-radius: 100%;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input.mail {
+    width: 98%;
+}
+
+textarea.msg {
+    width: 98%;
+    resize: vertical;
+}
+
+button.contact-me {
+    margin-top: 10px;
+    font-size: 18px;
+    background-color: #03618c;
+    border: 0;
+    color: #0b2235;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+hr {
+    background-color: black;
+    height: 2px;
+    border: 0;
+}
+
+.skills-section {
+    padding: 2rem 0;
+    opacity: 0;
+}
+
+
+.s-container {
+    color: #2c3e50;
+    line-height: 1.6;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.skills-h {
+    color: #34495e;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    position: relative;
+    text-align: center;
+}
+
+
+
+.skill-container {
+    margin-bottom: 1.5rem;
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.skill-name {
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.skill-percentage {
+    font-weight: 600;
+}
+
+.skill-bar {
+    height: 10px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background-color: #011627;
+    width: 0; /* Initial width before animation */
+    border-radius: 5px;
+    transition: width 1.5s ease-out;
+}
+
+/* Animation class that will be added by JavaScript */
+.animate-skill {
+    animation: progressAnimation 1.5s ease-out forwards;
+}
+
+@keyframes progressAnimation {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: var(--target-percentage);
+    }
+}
+
+.links-icons {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+}

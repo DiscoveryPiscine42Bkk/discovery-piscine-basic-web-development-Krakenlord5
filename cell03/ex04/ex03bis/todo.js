@@ -58,6 +58,6 @@ function confirmDelete(item)
         const index = todos.indexOf($(item).children().text());
         todos.splice(index, 1);
         document.cookie = "texts=" + todos;
-        item.remove();
+        $(item).remove();
     }
 }
